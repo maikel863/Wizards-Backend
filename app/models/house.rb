@@ -1,3 +1,3 @@
 class House < ApplicationRecord
-    has_many :teachers
+    has_many :teachers, dependent: :destroy
 end
